@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>成功界面</title>
+</head>
+<body>
+    <h1>成功跳转</h1>
+    <div th:text="${hello}">这里显示欢迎信息</div>
+    <div th:class="${class}">更改类名</div>
+    <div>[[${hello}]]</div>
+    <div>[(${hello})]</div>
+    <hr/>
+    <h4 th:each="user : ${users}" th:text="${user}"></h4>
+</body>
+</html>

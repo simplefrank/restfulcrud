@@ -1,0 +1,14 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /crud
+spring:
+  messages:
+    basename: i18n.login
+  thymeleaf:
+    cache: false
+  mvc:
+    date-format: yyyy年MM月dd日
+    hiddenmethod:
+      filter:
+        enabled: true
